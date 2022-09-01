@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    background: url("../images/fondo-tornillos.jpg") no-repeat;
+    background-size: cover;
+    height: 20rem;
+    font-family: Quantico, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 15px #222;
+}
+
+header > h1#home-title {
+    color: white;
+    font-size: 5rem;
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+
+
+/*section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}*/
+
+
+input[type="text"], input[type="number"] {
+    border-style: none;
+    border-radius: 0;
+    background: transparent;
+    outline: none;
+    color: white;
+    border-bottom: 1px solid white;
+    padding-left: 5px;
+    font-size: 1.5rem;
+}
+
+
+input::placeholder {
+    font-size: 1rem;
+    color: grey;
+    text-align: center;
+}
+
+select {
+    border-style: none;
+    border-radius: 0;
+    background: transparent;
+    outline: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+option {
+    color: black;
+}
+
+main > nav#buttons-view {
+    margin: 2rem;
+}
+
+
+main > nav#buttons-view input {
+    display: none;
+}
+
+main > nav#buttons-view input:checked + .img-view-button {
+    box-shadow: 2px 2px 25px #222;
+}
+
+.img-view-button {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0.5rem;
+}
+
+nav#searching-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+nav#searching-bar > div {
+    padding: 3rem;
+}
+
+nav#searching-bar > div#second-filter {
+    display: flex;
+    flex-direction: row;
+}
+
+nav#searching-bar > div#second-filter > input {
+    height: 2.3rem;
+}
+
+div#radio-pickers {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+div#radio-pickers label {
+    color: white;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.5s;
+}
+
+
+.card-body>h5{
+    padding: 2rem;
+}
+.card-body>p{
+    padding: 2rem;
+}
+
+
+
+@media (max-width: 920px) {
+    nav#searching-bar {
+        flex-direction: column;
+    }
+
+    nav#searching-bar > div {
+        padding: 1rem;
+
+    }
+}
+
